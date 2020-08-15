@@ -35,7 +35,7 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize)
         free(pb);
         pb=NULL;
         return pout;
-    }
+};
 
 void main()
 {
