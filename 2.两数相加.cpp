@@ -9,16 +9,16 @@
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-        int len1=1;//记录l1的长度
-        int len2=1;//记录l2的长度
+        int len1=1;//记录l1的长�?
+        int len2=1;//记录l2的长�?
         ListNode* p=l1;
         ListNode* q=l2;
-        while(p->next!=NULL)//获取l1的长度
+        while(p->next!=NULL)//获取l1的长�?
         {
             len1++;
             p=p->next;
         }
-        while(q->next!=NULL)//获取l2的长度
+        while(q->next!=NULL)//获取l2的长�?
         {
             len2++;
             q=q->next;
@@ -42,8 +42,8 @@ public:
         p=l1;
         q=l2;
         bool count=false;//记录进位
-        ListNode* l3=new ListNode(-1);//存放结果的链表
-        ListNode* w=l3;//l3的移动指针
+        ListNode* l3=new ListNode(-1);//存放结果的链�?
+        ListNode* w=l3;//l3的移动指�?
         int i=0;//记录相加结果
         while(p!=NULL&&q!=NULL)
         {
@@ -54,7 +54,7 @@ public:
             p=p->next;
             q=q->next;
         }
-        if(count)//若最后还有进位
+        if(count)//若最后还有进�?
         {
             w->next=new ListNode(1);
             w=w->next;
@@ -68,7 +68,7 @@ public:
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-        ListNode* head=new ListNode(-1);//存放结果的链表
+        ListNode* head=new ListNode(-1);//存放结果的链�?
         ListNode* h=head;//移动指针
         int sum=0;//每个位的加和结果
         bool carry=false;//进位标志
